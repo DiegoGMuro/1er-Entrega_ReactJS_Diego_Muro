@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import NavBar from "./components/Navbar/Navbar";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import CartWidget from "./components/CartWidget/CartWidget";
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className='App'>
+      <NavBar />
+      <ItemListContainer greeting={'Bienvenidos a viajar por el mundo!!'} />
+      <div className="foto">
+        <img src="src/assets/Amsterdam.jpg" alt="amsterdam" />
+        <h5 className="colorletra">Amsterdam - ARS 550.000</h5>
+        <img src="src/assets/barcelona2.jpg" alt="barcelona" />
+        <h5 className="colorletra">Barcelona - ARS 600.000</h5>
+        <img src="src/assets/berlin1.jpg" alt="berlin" />
+        <h5 className="colorletra">Berlin - ARS 650.000</h5>
+        <img src="src/assets/londres4.jpg" alt="londres" />
+        <h5 className="colorletra">Londres - ARS 750.000</h5>
+        <img src="src/assets/paris2.jpg" alt="paris" />
+        <h5 className="colorletra">Paris - ARS 500.000</h5>
+        <img src="src/assets/roma1.jpg" alt="roma" />
+        <h5 className="colorletra">Roma - ARS 450.000</h5>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+
+    </div>
+  );
 }
 
-export default App
+export default App;

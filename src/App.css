@@ -40,3 +40,24 @@
 .read-the-docs {
   color: #888;
 }
+
+/*-------------------------------------------------------------------------*/
+
+.foto img {
+  width: 250px;
+  height: 150px;
+  border-radius: 20px; 
+  }
+
+
+.colorletra{
+  color: green;
+  text-decoration:overline;
+}
+
+
+body {
+  background-color: lightgoldenrodyellow; 
+  }
+
+/*---------------------------------------------------*/
